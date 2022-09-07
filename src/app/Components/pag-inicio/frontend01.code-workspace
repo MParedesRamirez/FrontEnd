@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"name": "PMMCourier",
+			"path": "../../../../../../../../PMMCourier/PMMCourier"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "frontend01"
+	}
+}
