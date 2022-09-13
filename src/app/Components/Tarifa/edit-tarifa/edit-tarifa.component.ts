@@ -6,7 +6,7 @@ import { ServiceTarifaService } from 'src/app/Service/tarifa/service-tarifa.serv
 @Component({
   selector: 'app-edit-tarifa',
   templateUrl: './edit-tarifa.component.html',
-  styleUrls: ['./edit-tarifa.component.css']
+  styleUrls: ['./editStyle.css']
 })
 export class EditTarifaComponent implements OnInit {
 

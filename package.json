@@ -2,7 +2,7 @@
   "name": "frontend01",
   "version": "0.0.0",
   "scripts": {
-    "dev":"src/app/Components/Distrito/list-distrito/Script.js",
+    "dev": "src/app/Components/Distrito/list-distrito/Script.js",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
     "bootstrap": "^5.2.0",
+    "component-nav": "^1.0.0",
     "g": "^2.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
