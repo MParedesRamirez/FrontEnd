@@ -1,3 +1,5 @@
+<html class="body-gradient">
+
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,101 +16,32 @@
 
 <body>
   <app-root></app-root>
+  <div id="box1" class="box blurred-bg tinted">
+    <div class="content">
+      <h1>NUEVA TARIFA</h1>
+      <div style="width: 350px; margin: auto;">
+        <form>
+          <div class="form-group">
+            <label for="tarifa"></label>
+            <input type="text" class="form-control" id="tarifa" [(ngModel)]="tarifaNueva.tarifa" name="tarifa" />
+          </div>
+        </form>
+        <br />
+        <div class="form-group align-right">
+          <button type="submit" class="custom-btn btn-3" (click)="creartarifa()">
+            <span>Crear</span>
+          </button>
+          <button type="submit" class="custom-btn btn-5" (click)="regresar()">
+            <span>Regresar</span>
+          </button>
+        </div>
+        <p style="display: none;"><strong>{{ mensaje }}</strong></p>
+        <div *ngIf="!tarifaNueva"></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="main"></div>
 </body>
 
 </html>
-
-
-
-
-<div style="width: 400px; margin: auto;" >
-  <h4>Nueva Tarifa</h4>
-  <form >
-    <div class="form-group">
-      <label for="tarifa">Tarifa</label>
-      <input type="text" class="form-control" id="tarifa" [(ngModel)]="tarifaNueva.tarifa" name="tarifa" />
-    </div>
-  </form>
-  <br />
-  <div class="form-group align-right">
-    <button type="submit" class="btn btn-outline-secondary" (click)="creartarifa()">
-      crear
-    </button>
-    <button type="submit" class="m-3 btn btn-outline-danger" (click)="regresar()">
-      regresar
-    </button>
-  </div>
-  <p>{{ mensaje }}</p>
-  <div *ngIf="!tarifaNueva"></div>
-</div>
-<div class="main"></div>
-<div class="footer">
-  <div class="bubbles">
-    <div class="bubble"
-      style="--size:3.7287441683472053rem; --distance:9.964746126727658rem; --position:22.762035236537795%; --time:3.9505954427267103s; --delay:-2.4399997008757244s;">
-    </div>
-    <div class="bubble"
-      style="--size:3.16143681790295rem; --distance:8.015499090723235rem; --position:45.43503909206924%; --time:3.126883839840623s; --delay:-2.7243413396775913s;">
-    </div>
-    <div class="bubble"
-      style="--size:4.17290366843756rem; --distance:8.11036315694009rem; --position:15.411993891857428%; --time:3.6617113315861665s; --delay:-2.5156926449331873s;">
-    </div>
-    <div class="bubble"
-      style="--size:5.041736759444359rem; --distance:8.330843965560563rem; --position:36.96049252238547%; --time:2.3650595789731548s; --delay:-3.578871374037978s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.4983138950055137rem; --distance:8.96686096510748rem; --position:103.4129095694139%; --time:3.4610764930687514s; --delay:-2.6838107265566986s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.943860919999228rem; --distance:7.371266477143138rem; --position:2.977024565935549%; --time:3.7137509864345346s; --delay:-2.9273707265704214s;">
-    </div>
-    <div class="bubble"
-      style="--size:3.958274276433685rem; --distance:9.559720471866765rem; --position:95.01813779055188%; --time:3.39605944756704s; --delay:-2.2908676856237156s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.3779413992983605rem; --distance:7.0793754907751225rem; --position:79.92882794536384%; --time:2.7017633555235547s; --delay:-2.0619005221832594s;">
-    </div>
-    <div class="bubble"
-      style="--size:4.272495655921489rem; --distance:9.344596506222821rem; --position:87.8089931119347%; --time:3.799821354044022s; --delay:-2.335497404844974s;">
-    </div>
-    <div class="bubble"
-      style="--size:3.6815317404638943rem; --distance:6.223087458235207rem; --position:80.13375883765698%; --time:3.06395345953185s; --delay:-3.762792512474529s;">
-    </div>
-    <div class="bubble"
-      style="--size:3.0046182456940596rem; --distance:8.04165799032727rem; --position:82.21238773771606%; --time:3.2637672215867553s; --delay:-3.864987736114237s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.45578113640181rem; --distance:6.346536587354014rem; --position:-3.3793480675329124%; --time:2.0763778948999496s; --delay:-2.328928262086626s;">
-    </div>
-    <div class="bubble"
-      style="--size:3.541798713503087rem; --distance:7.487035318490276rem; --position:55.27261094813454%; --time:2.594476133095325s; --delay:-3.7480678852381337s;">
-    </div>
-    <div class="bubble"
-      style="--size:4.344328891240787rem; --distance:6.145766378597399rem; --position:36.13310729125508%; --time:3.3828086611522914s; --delay:-2.145629880855441s;">
-    </div>
-    <div class="bubble"
-      style="--size:4.856099643905713rem; --distance:9.258920887454767rem; --position:3.861956515225941%; --time:3.958084902801208s; --delay:-2.549386270691619s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.2065700027807136rem; --distance:9.948820456537977rem; --position:38.626546097375915%; --time:3.0601480291670238s; --delay:-2.6089712826351024s;">
-    </div>
-    <div class="bubble"
-      style="--size:3.132157091437344rem; --distance:6.588180125016003rem; --position:9.170892615100385%; --time:2.5823834685941858s; --delay:-2.5540993629175466s;">
-    </div>
-    <div class="bubble"
-      style="--size:4.118891499913785rem; --distance:7.236077097105032rem; --position:30.52103355448903%; --time:3.440298473384582s; --delay:-2.0709535813805204s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.9504454389312738rem; --distance:6.914730100513741rem; --position:3.9625678012579613%; --time:3.3874451217946864s; --delay:-3.4121244117136156s;">
-    </div>
-    <div class="bubble"
-      style="--size:4.63672336487533rem; --distance:7.98823804268004rem; --position:29.122070737492017%; --time:3.4410957173815695s; --delay:-3.873697065550597s;">
-    </div>
-    <div class="bubble"
-      style="--size:2.647478816688709rem; --distance:9.923423405243565rem; --position:54.97193797397482%; --time:3.469102811537044s; --delay:-3.0831360195210165s;">
-    </div>
-
-  </div>
-  <div class="content">
-  </div>
-</div>
